@@ -19,7 +19,7 @@ final ThemeData kDefaultTheme = ThemeData(
   accentColor: Colors.orangeAccent[400],
 );
 
-String _name = '김성진';
+String _name = 'K김성진';
 
 class FriendlyChatApp extends StatelessWidget {
   const FriendlyChatApp({
@@ -62,7 +62,7 @@ class ChatMessage extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(_name, style: Theme.of(context).textTheme.bodyText1),
+                    Text(_name.substring(1, 4), style: Theme.of(context).textTheme.bodyText1),
                     // Text(_name, style: Theme.of(context).textTheme.headline4),
                     Container(
                       margin: EdgeInsets.only(top: 5.0),
